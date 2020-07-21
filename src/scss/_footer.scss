@@ -42,12 +42,14 @@
     padding: 0;
     margin-left:0 !important;
     margin-bottom:0;
+    &:last-child{
+      margin-bottom: 1rem;
+    }
 
 }
 .thefooter__navlink a {
     display: block;
-    text-decoration: none;
+    text-decoration: underline !important;
+
 
 }
-
-
