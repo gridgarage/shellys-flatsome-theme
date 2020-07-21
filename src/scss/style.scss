@@ -1,32 +1,32 @@
 /*
 Theme Name: Flatsome Child
-Description: This is a child theme for Flatsome Theme                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+Description: This is a child theme for Flatsome Theme
 Author: UX Themes
 Template: flatsome
 Version: 3.0
-*/                                                                                                                                                                                                                  
+*/
 @import "bourbon/bourbon";
 @import "variables";
 @import "mixins";
-@import "typo";   
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+@import "typo";
+@import "buttons";
 @import "mobile-default";
 @import "_home-sections.scss";
-@import "mailchimp";  
+@import "mailchimp";
 @import "footer";
 
 
 @media only screen and (min-width: 48em) {
-   
-   
+
+
     @import "tablet";
 
-    
+
 }
-    
+
 @media only screen and (min-width: 64em) {
 
- 
+
     @import "desktop";
 
 }
