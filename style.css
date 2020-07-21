@@ -1,11 +1,30 @@
 /*
 Theme Name: Flatsome Child
-Description: This is a child theme for Flatsome Theme                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+Description: This is a child theme for Flatsome Theme
 Author: UX Themes
 Template: flatsome
 Version: 3.0
 */
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+.btn {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  margin: 0;
+  padding: 0; }
+
+.btn--orange {
+  color: #e25324;
+  background-color: transparent; }
+  .btn--orange :hover {
+    color: #ba4119; }
+
 /* GLobals Mobile */
 .box-text-products .title-wrapper {
   font-size: 1.44em; }
@@ -24,7 +43,7 @@ div.wpcf7-mail-sent-ok {
 .welcome-hero__title {
   letter-spacing: 15px;
   font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 1em; }
 
 /* SECTION ABOUT US */
@@ -60,7 +79,8 @@ div.wpcf7-mail-sent-ok {
   background-image: url(assets/images/product__blob.png);
   background-repeat: no-repeat;
   background-size: 300px 300px;
-  background-position: center; }
+  background-position: center 190px;
+  overflow: hidden; }
 
 /* SECTION CATALOG BANNER */
 .catalog-section__title {
@@ -83,6 +103,22 @@ div.wpcf7-mail-sent-ok {
   font-size: 1em;
   text-align: center; }
 
+/* CATALOG BY BIKINI STYLE */
+.catalog__product-title-container {
+  position: relative;
+  width: 100% !important;
+  height: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center; }
+
+.catalog__product-title {
+  margin-top: 4px;
+  font-size: 1.728em;
+  font-family: "Playfair Display", serif;
+  font-weight: 700 !important;
+  color: #fff;
+  text-transform: uppercase; }
+
 /* SECTION NEWSLETTER */
 .newsletter {
   background: url(assets/images/goldsun@2x.png) no-repeat #e9e6df;
@@ -90,7 +126,8 @@ div.wpcf7-mail-sent-ok {
   background-position: 0 150px; }
   .newsletter__title {
     font-size: 1.728em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #55433b; }
   .newsletter__description {
     font-size: 1rem; }
 
@@ -111,6 +148,18 @@ div.wpcf7-mail-sent-ok {
   .new-arrivals__description--span {
     font-size: 1.2em;
     text-transform: uppercase; }
+
+/* SECTION BLOG POSTS */
+.myblog__article-title {
+  font-size: 1.728em;
+  color: #55433b;
+  line-height: 1.33;
+  text-align: left; }
+.myblog__article-description {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.2;
+  text-align: justify; }
 
 /* SECTION FOOTER */
 .thefooter {
@@ -150,9 +199,12 @@ div.wpcf7-mail-sent-ok {
   .thefooter__list-item:last-child {
     margin-bottom: 1rem; }
 
-.thefooter__navlink a {
+.thefooter__navlink {
   display: block;
-  text-decoration: underline !important; }
+  cursor: pointer; }
+  .thefooter__navlink :hover {
+    text-decoration: underline !important;
+    color: #d1ae6e !important; }
 
 @media only screen and (min-width: 48em) {
   .box-text-products .title-wrapper {
