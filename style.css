@@ -20,9 +20,6 @@ Version: 3.0
 div.wpcf7-mail-sent-ok {
   border: none; }
 
-#footer_navigation .col-inner ul li.thefoother__list-item {
-  margin-left: 0; }
-
 /* SECTION WELCOME HERO */
 .welcome-hero__title {
   letter-spacing: 15px;
@@ -99,15 +96,21 @@ div.wpcf7-mail-sent-ok {
 
 /* SECTION NEW ARRIVALS */
 .new-arrivals__title {
-  font-size: 2.0736em;
-  font-weight: 400;
+  font-size: 2.985984em !important;
+  font-weight: 700 !important;
   text-transform: uppercase;
-  letter-spacing: 5px; }
+  letter-spacing: 3px; }
   @media (max-width: 599px) {
     .new-arrivals__title {
       font-size: 2.48832em !important; } }
 .new-arrivals__description {
   font-size: 1.2em; }
+  @media (max-width: 599px) {
+    .new-arrivals__description {
+      display: none; } }
+  .new-arrivals__description--span {
+    font-size: 1.2em;
+    text-transform: uppercase; }
 
 /* SECTION FOOTER */
 .thefooter {
@@ -144,10 +147,12 @@ div.wpcf7-mail-sent-ok {
   padding: 0;
   margin-left: 0 !important;
   margin-bottom: 0; }
+  .thefooter__list-item:last-child {
+    margin-bottom: 1rem; }
 
 .thefooter__navlink a {
   display: block;
-  text-decoration: none; }
+  text-decoration: underline !important; }
 
 @media only screen and (min-width: 48em) {
   .box-text-products .title-wrapper {
