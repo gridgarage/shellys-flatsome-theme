@@ -9,7 +9,7 @@
 
 	}
 
-  
+
 }
 
 /* SECTION ABOUT US */
@@ -115,11 +115,11 @@
 .new-arrivals {
 
 	&__title {
-		font-size: modular-scale(4);
-		font-weight:400;
+		font-size: modular-scale(6)!important;
+		font-weight:700 !important;
 		text-transform:uppercase;
-		letter-spacing:5px;
-			
+		letter-spacing:3px;
+
 			@include for-phone-only {
 			font-size: modular-scale(5)!important;
 			}
@@ -129,6 +129,13 @@
 	&__description {
 		font-size: modular-scale(1);
 
+		@include for-phone-only {
+			display: none;
+		}
+		&--span {
+			font-size: modular-scale(1);
+			text-transform: uppercase;
+		}
+
 	}
 }
-
