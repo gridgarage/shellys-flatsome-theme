@@ -21,3 +21,22 @@
   }
 
 }
+
+.scroll-to-bullets a {
+
+    border: 3px solid $secondaryColor !important;;
+    background-color: #fff !important;
+    margin: 10px 15px;
+    width: 18px !important;;
+    height: 18px !important;;
+    border-radius: 30px;
+    transition: all .3s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+
+    &:hover {
+          background-color: $accentColor1 !important;
+    }
+}
+.tooltipstered a:active{
+  color:$accentColor1 !important;
+}
