@@ -1,11 +1,34 @@
 /* SECTION WELCOME HERO */
+
 .welcome-hero {
+	border-bottom: 10px solid $primaryColor;
+
+	opacity: .90;
+/*
+		@include for-phone-only {
+			background: url(assets/images/welcome-banner--small.jpg)!important ;
+			background-position: center bottom !important;
+
+		}
+		@include for-tablet-portrait-up {
+			background: url(assets/images/welcome-banner--medium-portrait.jpg)!important ;
+
+		}
+		@include for-tablet-landscape-up {
+			background: url(assets/images/welcome-banner--medium-landscape.jpg)!important ;
+
+		}
+
+	@include for-desktop-up {
+			background: url(assets/images/welcome-banner--xlarge-landscape.jpg)!important ;
+		background-position: center center !important;
+	} */
 
 	&__title {
 	  letter-spacing: 15px;
 		font-family: $defaultFont;
 		font-weight: 300;
-		font-size: modular_scale(0)
+		font-size: .85rem;
 
 	}
 
@@ -60,9 +83,10 @@
 .products__right-column {
     background-image: url(assets/images/product__blob.png);
 		background-repeat: no-repeat;
-    background-size: 300px 300px;
-    background-position: center 190px;
+    background-size: 280px 280px;
+    background-position: center center;
 		overflow: hidden;
+
 }
 /* SECTION CATALOG BANNER */
 
@@ -96,12 +120,17 @@
 .catalog__product-title-container {
 	position: relative;
 	width: 100% !important;
-	height: 2.5rem;
-	  background-color: rgba(0,0,0, 0.1);
+	height: 2.3rem;
+	background-color: rgba(0,0,0, 0.1);
 	text-align: center;
+
+
+	@include for-desktop-up {
+	padding-top: 2px;
+	}
 }
 .catalog__product-title {
-margin-top: 4px;
+  margin-top: 4px;
 	font-size: modular-scale(3);
 	font-family: $headingFont;
 	font-weight: 700 !important;
