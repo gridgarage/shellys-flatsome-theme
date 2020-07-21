@@ -2,9 +2,9 @@
 .welcome-hero {
 
 	&__title {
-	  	letter-spacing: 15px;
+	  letter-spacing: 15px;
 		font-family: $defaultFont;
-		font-weight: bold;
+		font-weight: 300;
 		font-size: modular_scale(0)
 
 	}
@@ -59,9 +59,10 @@
 
 .products__right-column {
     background-image: url(assets/images/product__blob.png);
-    background-repeat: no-repeat;
+		background-repeat: no-repeat;
     background-size: 300px 300px;
-    background-position: center;
+    background-position: center 190px;
+		overflow: hidden;
 }
 /* SECTION CATALOG BANNER */
 
@@ -91,6 +92,24 @@
 
 
 }
+/* CATALOG BY BIKINI STYLE */
+.catalog__product-title-container {
+	position: relative;
+	width: 100% !important;
+	height: 2.5rem;
+	  background-color: rgba(0,0,0, 0.1);
+	text-align: center;
+}
+.catalog__product-title {
+margin-top: 4px;
+	font-size: modular-scale(3);
+	font-family: $headingFont;
+	font-weight: 700 !important;
+	color: #fff;
+	text-transform: uppercase;
+
+
+}
 /* SECTION NEWSLETTER */
 
 .newsletter {
@@ -101,6 +120,7 @@
     &__title {
         font-size: modular-scale(3);
 	text-transform:uppercase;
+	color: $primaryColor;
     }
 &__description {
 	font-size:1rem;
@@ -138,4 +158,22 @@
 		}
 
 	}
+}
+
+/* SECTION BLOG POSTS */
+.myblog {
+
+	&__article-title {
+		font-size: modular-scale(3);
+		color: $primaryColor;
+		line-height: 1.33;
+		text-align: left;
+	}
+	&__article-description {
+		font-size: modular-scale(0);
+		color:#333;
+		line-height: 1.2;
+		text-align: justify;
+	}
+
 }
