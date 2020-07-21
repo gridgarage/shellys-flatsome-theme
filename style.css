@@ -25,6 +25,21 @@ Version: 3.0
   .btn--orange :hover {
     color: #ba4119; }
 
+.scroll-to-bullets a {
+  border: 3px solid #d1ae6e !important;
+  background-color: #fff !important;
+  margin: 10px 15px;
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 30px;
+  transition: all .3s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+  .scroll-to-bullets a:hover {
+    background-color: #e25324 !important; }
+
+.tooltipstered a:active {
+  color: #e25324 !important; }
+
 /* GLobals Mobile */
 .box-text-products .title-wrapper {
   font-size: 1.44em; }
@@ -40,11 +55,33 @@ div.wpcf7-mail-sent-ok {
   border: none; }
 
 /* SECTION WELCOME HERO */
-.welcome-hero__title {
-  letter-spacing: 15px;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 1em; }
+.welcome-hero {
+  border-bottom: 10px solid #55433b;
+  opacity: .90;
+  /*
+  		@include for-phone-only {
+  			background: url(assets/images/welcome-banner--small.jpg)!important ;
+  			background-position: center bottom !important;
+  
+  		}
+  		@include for-tablet-portrait-up {
+  			background: url(assets/images/welcome-banner--medium-portrait.jpg)!important ;
+  
+  		}
+  		@include for-tablet-landscape-up {
+  			background: url(assets/images/welcome-banner--medium-landscape.jpg)!important ;
+  
+  		}
+  
+  	@include for-desktop-up {
+  			background: url(assets/images/welcome-banner--xlarge-landscape.jpg)!important ;
+  		background-position: center center !important;
+  	} */ }
+  .welcome-hero__title {
+    letter-spacing: 15px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: .85rem; }
 
 /* SECTION ABOUT US */
 .about {
@@ -78,8 +115,8 @@ div.wpcf7-mail-sent-ok {
 .products__right-column {
   background-image: url(assets/images/product__blob.png);
   background-repeat: no-repeat;
-  background-size: 300px 300px;
-  background-position: center 190px;
+  background-size: 280px 280px;
+  background-position: center center;
   overflow: hidden; }
 
 /* SECTION CATALOG BANNER */
@@ -107,9 +144,12 @@ div.wpcf7-mail-sent-ok {
 .catalog__product-title-container {
   position: relative;
   width: 100% !important;
-  height: 2.5rem;
+  height: 2.3rem;
   background-color: rgba(0, 0, 0, 0.1);
   text-align: center; }
+  @media (min-width: 1200px) {
+    .catalog__product-title-container {
+      padding-top: 2px; } }
 
 .catalog__product-title {
   margin-top: 4px;
