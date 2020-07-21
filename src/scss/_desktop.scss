@@ -1,0 +1,28 @@
+.about__left-column {
+  min-height: 400px;
+  background-size: 60% 60%;
+  background-position: center center;
+ 
+}
+
+.products__right-column {
+    min-height: 400px;
+    background-size: 80% 80%;
+
+
+    }
+
+    .box-text-products .title-wrapper  {
+      font-size:modular_scale(1);
+  }
+  .price-wrapper .price {
+      font-size:modular_scale(0);
+      font-weight: normal;
+  }
+  
+
+.newsletter {
+  background:url(assets/images/goldsun@2x.png) no-repeat rgb(233, 230, 223);
+  background-size: 60%;
+  background-position:5% 20px;
+}

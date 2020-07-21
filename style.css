@@ -1,0 +1,184 @@
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+/* GLobals Mobile */
+.box-text-products .title-wrapper {
+  font-size: 1.44em; }
+
+.price-wrapper .price {
+  font-size: 1.2em;
+  font-weight: normal; }
+
+.alert-color {
+  columns: #e25324; }
+
+div.wpcf7-mail-sent-ok {
+  border: none; }
+
+#footer_navigation .col-inner ul li.thefoother__list-item {
+  margin-left: 0; }
+
+/* SECTION WELCOME HERO */
+.welcome-hero__title {
+  letter-spacing: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1em; }
+
+/* SECTION ABOUT US */
+.about {
+  padding-top: 30px;
+  padding-bottom: 0px; }
+  .about__left-column {
+    padding-top: 30px;
+    background-image: url(assets/images/about__blob.png);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: center; }
+  .about__title {
+    color: #55433b;
+    font-size: 2.48832em;
+    font-family: "Abril Fatface", cursive;
+    font-weight: normal;
+    letter-spacing: 2px; }
+  .about__subtitle {
+    color: #e25324;
+    font-size: 1.728em;
+    font-family: "Playfair Display", serif;
+    font-weight: 700; }
+  .about__p {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: justify; }
+  .about__right-column {
+    padding-bottom: 0; }
+
+/* SECTION OUR CLOTHING */
+.products__right-column {
+  background-image: url(assets/images/product__blob.png);
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-position: center; }
+
+/* SECTION CATALOG BANNER */
+.catalog-section__title {
+  letter-spacing: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1em; }
+
+.catalogos strong {
+  text-shadow: 1px 1px 3px #6e6e6e;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 40px;
+  padding-right: 40px; }
+
+.catalogos__p {
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  color: #d1ae6e;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center; }
+
+/* SECTION NEWSLETTER */
+.newsletter {
+  background: url(assets/images/goldsun@2x.png) no-repeat #e9e6df;
+  background-size: 100%;
+  background-position: 0 150px; }
+  .newsletter__title {
+    font-size: 1.728em;
+    text-transform: uppercase; }
+  .newsletter__description {
+    font-size: 1rem; }
+
+/* SECTION NEW ARRIVALS */
+.new-arrivals__title {
+  font-size: 2.0736em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px; }
+  @media (max-width: 599px) {
+    .new-arrivals__title {
+      font-size: 2.48832em !important; } }
+.new-arrivals__description {
+  font-size: 1.2em; }
+
+/* SECTION FOOTER */
+.thefooter {
+  padding-bottom: 0; }
+
+.thefooter__title {
+  color: #d1ae6e !important;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 1px; }
+
+.thefooter__p {
+  font-size: 1em;
+  line-height: 1.25; }
+
+.thefooter__hr {
+  border-top: 4px solid #efede1;
+  opacity: .5;
+  width: 30px;
+  margin-top: 0; }
+
+.thefooter__links {
+  text-decoration: none; }
+
+.thefooter__nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.thefooter__list-item {
+  padding: 0;
+  margin-left: 0 !important;
+  margin-bottom: 0; }
+
+.thefooter__navlink a {
+  display: block;
+  text-decoration: none; }
+
+@media only screen and (min-width: 48em) {
+  .box-text-products .title-wrapper {
+    font-size: 1.2em; }
+
+  .price-wrapper .price {
+    font-size: 1em;
+    font-weight: normal; }
+
+  .newsletter {
+    background-position: 0 30px; } }
+@media only screen and (min-width: 64em) {
+  .about__left-column {
+    min-height: 400px;
+    background-size: 60% 60%;
+    background-position: center center; }
+
+  .products__right-column {
+    min-height: 400px;
+    background-size: 80% 80%; }
+
+  .box-text-products .title-wrapper {
+    font-size: 1.2em; }
+
+  .price-wrapper .price {
+    font-size: 1em;
+    font-weight: normal; }
+
+  .newsletter {
+    background: url(assets/images/goldsun@2x.png) no-repeat #e9e6df;
+    background-size: 60%;
+    background-position: 5% 20px; } }
+
+/*# sourceMappingURL=style.css.map */

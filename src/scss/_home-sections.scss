@@ -1,0 +1,134 @@
+/* SECTION WELCOME HERO */
+.welcome-hero {
+
+	&__title {
+	  	letter-spacing: 15px;
+		font-family: $defaultFont;
+		font-weight: bold;
+		font-size: modular_scale(0)
+
+	}
+
+  
+}
+
+/* SECTION ABOUT US */
+
+.about {
+    padding-top: 30px;
+    padding-bottom: 0px;
+
+	&__left-column {
+	    padding-top: 30px;
+	    background-image: url(assets/images/about__blob.png);
+	    background-repeat: no-repeat;
+	    background-size: 300px 300px;
+	    background-position: center;
+
+	}
+
+	&__title {
+	    color: $primaryColor;
+	    font-size: modular_scale(5);
+	    font-family: $specialFont;
+	    font-weight: normal;
+
+	    letter-spacing: 2px;
+	}
+
+	&__subtitle {
+	    color: $accentColor1;
+	    font-size: modular_scale(3);
+	    font-family: $headingFont;
+	    font-weight: 700;
+	}
+
+	&__p {
+	    font-size: modular_scale(0);
+	    font-weight: normal;
+	    text-align: justify;
+	}
+
+	&__right-column {
+	    padding-bottom: 0;
+	}
+
+}
+
+/* SECTION OUR CLOTHING */
+
+.products__right-column {
+    background-image: url(assets/images/product__blob.png);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: center;
+}
+/* SECTION CATALOG BANNER */
+
+.catalog-section__title {
+    letter-spacing: 15px;
+    font-family: $defaultFont;
+    font-weight: bold;
+    font-size: modular_scale(0)
+}
+
+.catalogos strong {
+    text-shadow: 1px 1px 3px rgb(110, 110, 110);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-left: 40px;
+    padding-right: 40px;
+
+
+}
+
+.catalogos__p {
+    letter-spacing: 2px;
+    font-family: $defaultFont;
+    color: #d1ae6e;
+    font-weight: bold;
+    font-size: modular_scale(0);
+    text-align: center;
+
+
+}
+/* SECTION NEWSLETTER */
+
+.newsletter {
+    background: url(assets/images/goldsun@2x.png) no-repeat rgb(233, 230, 223);
+    background-size: 100%;
+    background-position: 0 150px;
+
+    &__title {
+        font-size: modular-scale(3);
+	text-transform:uppercase;
+    }
+&__description {
+	font-size:1rem;
+}
+
+
+}
+
+
+/* SECTION NEW ARRIVALS */
+
+.new-arrivals {
+
+	&__title {
+		font-size: modular-scale(4);
+		font-weight:400;
+		text-transform:uppercase;
+		letter-spacing:5px;
+			
+			@include for-phone-only {
+			font-size: modular-scale(5)!important;
+			}
+
+	}
+
+	&__description {
+		font-size: modular-scale(1);
+
+	}
+}
+

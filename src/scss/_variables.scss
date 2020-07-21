@@ -1,0 +1,35 @@
+//// MEDIA QUERIES ///
+
+$mobile-portrait: 30em; // 480 pixels
+$mobile-landscape: 35em; // 560 pixels;
+$tablet: 48em; // 768 pixels
+$desktop: 64.0625em; // 1025pixels
+$mobileNav: 64em;
+
+
+
+// Color Palletes //
+
+$primaryColor:#55433b; //Marron
+$secondaryColor:#d1ae6e; //Dorado
+
+$accentColor1:#e25324;  
+$accentColor2:#24E3C9;
+$background-light-color:#fbfaf4;
+$background-dark-color:#2a211d;
+
+$font-light-color:#efede1;
+$font-dark-color:#303030;
+$font-link-color:#00a897;
+
+// Fuentes //
+
+$defaultFont:"Lato", sans-serif;
+$headingFont:"Playfair Display", serif;
+$specialFont:"Abril Fatface", cursive;
+
+// Escala de Fuentes //
+
+$bourbon: (
+  "modular-scale-ratio": 1.2,
+);
