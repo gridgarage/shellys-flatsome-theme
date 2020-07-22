@@ -14,19 +14,9 @@ Version: 3.0
 @import "_home-sections.scss";
 @import "mailchimp";
 @import "footer";
-
-
 @media only screen and (min-width: 48em) {
-
-
-    @import "tablet";
-
-
+  @import "tablet";
 }
-
 @media only screen and (min-width: 64em) {
-
-
-    @import "desktop";
-
+  @import "desktop";
 }

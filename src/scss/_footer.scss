@@ -34,6 +34,12 @@
 .thefooter__nav {
     display:flex;
     flex-direction:column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     margin:0;

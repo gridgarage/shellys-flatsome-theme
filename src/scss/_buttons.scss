@@ -1,4 +1,5 @@
-.btn{
+/* Custom buttons styles */
+.btn {
   position: relative;
   display: inline-block;
   text-transform: uppercase;
@@ -8,35 +9,34 @@
   text-align: center;
   text-decoration: none;
   border: 1px solid transparent;
-  margin:0;
+  margin: 0;
   padding: 0;
-
 }
-.btn--orange  {
-  color:$accentColor1;
+
+.btn--orange {
+  color: $accentColor1;
   background-color: transparent;
 
   :hover {
-  color:darken($accentColor1,10%);
+    color: darken($accentColor1,10%);
   }
-
 }
-
+/* Customize Bullet Nav Bar Here */
 .scroll-to-bullets a {
+  border: 3px solid $secondaryColor !important;
+  background-color: #fff !important;
+  margin: 10px 15px;
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 30px;
+  transition: all 0.3s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 
-    border: 3px solid $secondaryColor !important;;
-    background-color: #fff !important;
-    margin: 10px 15px;
-    width: 18px !important;;
-    height: 18px !important;;
-    border-radius: 30px;
-    transition: all .3s;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-
-    &:hover {
-          background-color: $accentColor1 !important;
-    }
+  &:hover {
+    background-color: $accentColor1 !important;
+  }
 }
-.tooltipstered a:active{
-  color:$accentColor1 !important;
+
+.tooltipstered a:active {
+  color: $accentColor1 !important;
 }

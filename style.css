@@ -5,7 +5,9 @@ Author: UX Themes
 Template: flatsome
 Version: 3.0
 */
+/* Import the Google Font "Abril Fat Face" */
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+/* Custom buttons styles */
 .btn {
   position: relative;
   display: inline-block;
@@ -25,6 +27,7 @@ Version: 3.0
   .btn--orange :hover {
     color: #ba4119; }
 
+/* Customize Bullet Nav Bar Here */
 .scroll-to-bullets a {
   border: 3px solid #d1ae6e !important;
   background-color: #fff !important;
@@ -32,7 +35,7 @@ Version: 3.0
   width: 18px !important;
   height: 18px !important;
   border-radius: 30px;
-  transition: all .3s;
+  transition: all 0.3s;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
   .scroll-to-bullets a:hover {
     background-color: #e25324 !important; }
@@ -49,7 +52,7 @@ Version: 3.0
   font-weight: normal; }
 
 .alert-color {
-  columns: #e25324; }
+  color: #e25324; }
 
 div.wpcf7-mail-sent-ok {
   border: none; }
@@ -57,39 +60,20 @@ div.wpcf7-mail-sent-ok {
 /* SECTION WELCOME HERO */
 .welcome-hero {
   border-bottom: 10px solid #55433b;
-  opacity: .90;
-  /*
-  		@include for-phone-only {
-  			background: url(assets/images/welcome-banner--small.jpg)!important ;
-  			background-position: center bottom !important;
-  
-  		}
-  		@include for-tablet-portrait-up {
-  			background: url(assets/images/welcome-banner--medium-portrait.jpg)!important ;
-  
-  		}
-  		@include for-tablet-landscape-up {
-  			background: url(assets/images/welcome-banner--medium-landscape.jpg)!important ;
-  
-  		}
-  
-  	@include for-desktop-up {
-  			background: url(assets/images/welcome-banner--xlarge-landscape.jpg)!important ;
-  		background-position: center center !important;
-  	} */ }
+  opacity: 0.90; }
   .welcome-hero__title {
     letter-spacing: 15px;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: .85rem; }
+    font-size: 0.85rem; }
 
 /* SECTION ABOUT US */
 .about {
   padding-top: 30px;
-  padding-bottom: 0px; }
+  padding-bottom: 0; }
   .about__left-column {
     padding-top: 30px;
-    background-image: url(assets/images/about__blob.png);
+    background-image: url("assets/images/about__blob.png");
     background-repeat: no-repeat;
     background-size: 300px 300px;
     background-position: center; }
@@ -113,7 +97,7 @@ div.wpcf7-mail-sent-ok {
 
 /* SECTION OUR CLOTHING */
 .products__right-column {
-  background-image: url(assets/images/product__blob.png);
+  background-image: url("assets/images/product__blob.png");
   background-repeat: no-repeat;
   background-size: 280px 280px;
   background-position: center center;
@@ -140,7 +124,7 @@ div.wpcf7-mail-sent-ok {
   font-size: 1em;
   text-align: center; }
 
-/* CATALOG BY BIKINI STYLE */
+/* SECTION BROWSE BY BIKINI STYLE */
 .catalog__product-title-container {
   position: relative;
   width: 100% !important;
@@ -159,9 +143,9 @@ div.wpcf7-mail-sent-ok {
   color: #fff;
   text-transform: uppercase; }
 
-/* SECTION NEWSLETTER */
+/* SECTION SUBSCRIBE TO NEWSLETTER */
 .newsletter {
-  background: url(assets/images/goldsun@2x.png) no-repeat #e9e6df;
+  background: url("assets/images/goldsun@2x.png") no-repeat #e9e6df;
   background-size: 100%;
   background-position: 0 150px; }
   .newsletter__title {
@@ -228,6 +212,12 @@ div.wpcf7-mail-sent-ok {
 .thefooter__nav {
   display: flex;
   flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   list-style: none;
   padding: 0;
   margin: 0; }
@@ -254,6 +244,7 @@ div.wpcf7-mail-sent-ok {
     font-size: 1em;
     font-weight: normal; }
 
+  /* SECTION NEWSLETTER */
   .newsletter {
     background-position: 0 30px; } }
 @media only screen and (min-width: 64em) {
@@ -273,8 +264,9 @@ div.wpcf7-mail-sent-ok {
     font-size: 1em;
     font-weight: normal; }
 
+  /* SECTION NEWSLETTER */
   .newsletter {
-    background: url(assets/images/goldsun@2x.png) no-repeat #e9e6df;
+    background: url("assets/images/goldsun@2x.png") no-repeat #e9e6df;
     background-size: 60%;
     background-position: 5% 20px; } }
 
