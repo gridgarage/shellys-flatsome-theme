@@ -1,6 +1,6 @@
 /* SECTION WELCOME HERO */
 .welcome-hero {
-	border-bottom: 10px solid $primaryColor;
+	border-bottom: 10px solid darken($accentColor2,10%);
 	opacity: 0.90;
 
 	&__title {
@@ -83,12 +83,15 @@
 .catalog__product-title-container {
 	position: relative;
 	width: 100% !important;
-	height: 2.3rem;
+
+	height: 3em;
 	background-color: rgba(0,0,0, 0.1);
 	text-align: center;
-	@include for-desktop-up {
-		padding-top: 2px;
+
+	@include for-phone-only {
+		height: 2em;
 	}
+
 }
 
 .catalog__product-title {
@@ -97,6 +100,10 @@
 	font-family: $headingFont;
 	font-weight: 700 !important;
 	color: #fff;
+	line-height: 1.4 !important;
+	@include for-phone-only {
+		line-height: 1 !important;
+	}
 	text-transform: uppercase;
 }
 /* SECTION SUBSCRIBE TO NEWSLETTER */
