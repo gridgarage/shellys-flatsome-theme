@@ -1,5 +1,9 @@
 /* GLobals Mobile */
+.content-wrapper {
+  width: 100% - $gutterdbl;
 
+  margin: 0 auto;
+}
 .box-text-products .title-wrapper {
     font-size: modular_scale(2);
 }
