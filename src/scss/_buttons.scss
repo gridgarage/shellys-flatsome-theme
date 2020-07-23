@@ -2,23 +2,54 @@
 .btn {
   position: relative;
   display: inline-block;
+
+  margin: 0;
+  padding: 0;
+
+
+  letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1px;
+  font-family: $defaultFont;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  border: 1px solid transparent;
-  margin: 0;
-  padding: 0;
+
+
+
 }
 
-.btn--orange {
+.btn--accent-1 {
   color: $accentColor1;
   background-color: transparent;
+  border: 1px solid transparent;
 
   :hover {
     color: darken($accentColor1,10%);
+  }
+}
+
+.btn--link{
+  color: darken($secondaryColor,10%);
+    background-color: transparent;
+    margin:.5em 0;
+    padding:.5em 0;
+
+    &:hover,
+    &.hover {
+
+      text-decoration: underline;
+
+    }
+}
+
+.btn--accent-2 {
+  color: $accentColor2;
+  background-color: transparent;
+
+  &:focus,
+  &.focus {
+    color: darken($accentColor2,30%);
   }
 }
 /* Customize Bullet Nav Bar Here */
@@ -31,6 +62,7 @@
   border-radius: 30px;
   transition: all 0.3s;
   box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+
 
   &:hover {
     background-color: $accentColor1 !important;
