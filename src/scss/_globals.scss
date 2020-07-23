@@ -1,1 +1,5 @@
 /* GLOBALS RULES */
+.content-wrapper {
+  width: 100% - $gutterdbl;
+  margin: 0 auto;
+}
